@@ -18,8 +18,8 @@ public class UserStatus {
     @Column(name = "id", nullable = false, updatable = false)
     private Long id;
 
-    @Column(name = "user_login", nullable = false)
-    private Boolean vipStatus;
+    @Column(name = "user_status", nullable = false)
+    private String statusUser;
 
     @OneToMany(mappedBy = "userStatus", cascade = CascadeType.ALL)
     private Set<User> users;

@@ -55,7 +55,7 @@ public class RegistrationController {
             return REG;
         }
         if (!userService.addUser(user, married, educations, date)) {
-            model.addAttribute("userloginError", "User exists or wrong user name!");
+            model.addAttribute("loginError", "User exists or wrong user name!");
             return REG;
         }
 

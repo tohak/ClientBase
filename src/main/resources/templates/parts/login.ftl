@@ -5,7 +5,7 @@
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">User login :</label>
             <div class="col-sm-3">
-                <input type="text" name="login" value="<#if user??>${user.login}</#if>"
+                <input type="text" name="login" value="<#if user??>${user.name}</#if>"
                        class="form-control ${(loginError??)?string('is-invalid', '')}"
                        placeholder="User login" />
                 <#if loginError??>
@@ -45,12 +45,12 @@
          <div class="form-group row">
                 <label class="col-sm-2 col-form-label">user name:</label>
                 <div class="col-sm-3">
-                    <input type="text" name="userName"
-                           class="form-control ${(userNameError??)?string('is-invalid', '')}"
-                           placeholder="Retype userName" />
-                    <#if userNameError??>
+                    <input type="text" name="name"
+                           class="form-control ${(nameError??)?string('is-invalid', '')}"
+                           placeholder="Retype username" />
+                    <#if nameError??>
                         <div class="invalid-feedback">
-                            ${userNameError}
+                            ${nameError}
                         </div>
                     </#if>
                 </div>
@@ -81,37 +81,48 @@
                     </#if>
                 </div>
             </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">user INN:</label>
+            <div class="col-sm-3">
+                <input type="number" name="inn"
+                       class="form-control ${(innError??)?string('is-invalid', '')}"
+                       placeholder="Retype inn" />
+                    <#if innError??>
+                        <div class="invalid-feedback">
+                            ${innError}
+                        </div>
+                    </#if>
+            </div>
+        </div>
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">user date:</label>
                 <div class="col-sm-3">
-                    <input type="date" name="date"
+                    <input type="date" name="dateusr"
                            class="form-control ${(dateError??)?string('is-invalid', '')}"
                            placeholder="Retype patronymic" />
                 </div>
-
-              <div class="form-group">
-  <label class="col-sm-2 col-form-label" for="sel1">Select married:</label>
-  <label for="married"></label><select class="form-control" id="married">
-    <option>married</option>
-    <option>unmarried</option>
-  </select>
-</div>
-             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">user INN:</label>
-                <div class="col-sm-3">
-                    <input type="number" name="inn"
-                           class="form-control ${(innError??)?string('is-invalid', '')}"
-                           placeholder="Retype patronymic" />
-                </div>
             </div>
-            <div class="form-group">
-  <label class="col-sm-2 col-form-label" for="sel1">Select education:</label>
-  <select class="form-control" id="educations">
-    <option>ELEMENTARY</option>
-    <option>SECONDARY</option>
-    <option>HIGHER</option>
-  </select>
-</div>
+
+              <div class="form-group row">
+      <label class="col-sm-2 col-form-label" for="married">State</label>
+                  <div class="col-sm-3">
+      <select id="married" name="married" class="form-control">
+          <option selected>married</option>
+          <option>unmarried</option>
+      </select>
+              </div>
+              </div>
+
+             <div class="form-group row">
+      <label class="col-sm-2 col-form-label" for="educations">education:</label>
+                  <div class="col-sm-3">
+      <select id="educations" name="educations" class="form-control">
+          <option selected>ELEMENTARY</option>
+          <option>SECONDARY</option>
+          <option>HIGHER</option>
+      </select>
+                  </div>
+             </div>
 </#if>
         <input type="hidden" name="_csrf" value="${_csrf.token}" />
         <#if !isRegisterForm><a href="/registration">Add new user</a>

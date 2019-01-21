@@ -29,12 +29,12 @@ public class User implements UserDetails {
     private Long id;
 
     @NotBlank(message = "Login is required")
-    @Column(name = "user_login", length = LENGTH, nullable = BUN_NULL)
+    @Column(length = LENGTH, nullable = BUN_NULL, unique = true)
     private String login;
 
     @NotBlank(message = "Name is required")
     @Column(name = "user_name", length = LENGTH, nullable = BUN_NULL)
-    private String userName;
+    private String name;
 
     @NotBlank(message = "Password cannot empty")
     @Column(name = "password", length = LENGTH, nullable = BUN_NULL)
@@ -48,7 +48,6 @@ public class User implements UserDetails {
     @Column(name = "user_patronymic", length = LENGTH, nullable = BUN_NULL)
     private String patronymic;
 
-    @DateTimeFormat(pattern = "dd-MM-yyyy")
     @Column(name = "user_date")
     private LocalDate date;
 
