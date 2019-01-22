@@ -29,11 +29,11 @@ public class User implements UserDetails {
     private Long id;
 
     @NotBlank(message = "Login is required")
-    @Column(length = LENGTH, nullable = BUN_NULL, unique = true)
-    private String login;
+    @Column(name = "user_name", length = LENGTH, nullable = BUN_NULL, unique = true)
+    private String username;
 
     @NotBlank(message = "Name is required")
-    @Column(name = "user_name", length = LENGTH, nullable = BUN_NULL)
+    @Column(name = "name", length = LENGTH, nullable = BUN_NULL)
     private String name;
 
     @NotBlank(message = "Password cannot empty")
@@ -76,7 +76,7 @@ public class User implements UserDetails {
 
     @Override
     public String getUsername() {
-        return login;
+        return username;
     }
 
     @Override

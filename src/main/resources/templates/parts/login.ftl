@@ -3,18 +3,18 @@
 
     <form action="${path}" method="post">
         <div class="form-group row">
-            <label class="col-sm-2 col-form-label">User login :</label>
-            <div class="col-sm-3">
-                <input type="text" name="login" value="<#if user??>${user.name}</#if>"
-                       class="form-control ${(loginError??)?string('is-invalid', '')}"
-                       placeholder="User login" />
-                <#if loginError??>
+        <label class="col-sm-2 col-form-label">User Name :</label>
+        <div class="col-sm-3">
+            <input type="text" name="username" value="<#if user??>${user.username}</#if>"
+                   class="form-control ${(usernameError??)?string('is-invalid', '')}"
+                   placeholder="User name" />
+            <#if usernameError??>
                     <div class="invalid-feedback">
-                        ${loginError}
+                        ${usernameError}
                     </div>
-                </#if>
-            </div>
+            </#if>
         </div>
+    </div>
         <div class="form-group row">
             <label class="col-sm-2 col-form-label">Password:</label>
             <div class="col-sm-3">

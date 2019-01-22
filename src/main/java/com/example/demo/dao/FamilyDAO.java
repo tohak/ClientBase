@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface FamilyDAO extends BaseDAO<Family, Long> {
+    Family findOneById(Long id);
 }

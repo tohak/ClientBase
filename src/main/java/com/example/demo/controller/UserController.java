@@ -3,10 +3,12 @@ package com.example.demo.controller;
 import com.example.demo.domain.User;
 import com.example.demo.domain.UserRole;
 import com.example.demo.service.UserService;
+import com.example.errors.ControllerErrorHandling;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -33,7 +35,7 @@ public class UserController {
         return "userList";
     }
 
-    @PreAuthorize("hasAuthority('ADMIN')") // обозначить прова только админам
+    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("{user}")
     public String userEditForm(@PathVariable User user, Model model) {
         model.addAttribute("user", user);
@@ -45,10 +47,19 @@ public class UserController {
     @PostMapping
     public String userSave(
             @RequestParam String login,
+            @RequestParam(required = false, defaultValue = "") String userstatus,
+            @RequestParam(required = false, defaultValue = "") String family,
             @RequestParam Map<String, String> form,
-            @RequestParam("userId") User user
+            @RequestParam("userId") User user,
+            Model model
     ) {
-        userService.saveUser(user, login, form);
+
+        try {
+            userService.saveUser(user, login, userstatus, family, form);
+        }catch (Exception ex){
+            model.addAttribute("message", ex.getMessage());
+            return "userEdit";
+        }
         return "redirect:/user";
     }
 }
