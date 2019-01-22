@@ -15,7 +15,7 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString(callSuper = true)
+@ToString
 @Builder
 @Entity
 @Table(name = "usr_tbl")
@@ -61,11 +61,13 @@ public class User implements UserDetails {
     @Column(name = "education_enum")
     private Education state;
 
+    @ToString.Exclude
     @ManyToOne
     @JoinColumn(name = "status_id")
     private UserStatus userStatus;
 
-    @ManyToOne
+    @ToString.Exclude
+    @ManyToOne()
     @JoinColumn(name = "family_id")
     private Family family;
 

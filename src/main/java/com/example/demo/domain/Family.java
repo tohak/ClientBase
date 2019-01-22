@@ -9,7 +9,7 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString(callSuper = true)
+@ToString
 @Entity
 @Table(name = "family_tbl")
 public class Family {
@@ -20,4 +20,6 @@ public class Family {
 
     @OneToMany(mappedBy = "family", cascade = CascadeType.ALL)
     private Set<User> users;
+
+
 }

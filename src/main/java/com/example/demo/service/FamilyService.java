@@ -2,13 +2,10 @@ package com.example.demo.service;
 
 import com.example.demo.dao.FamilyDAO;
 import com.example.demo.domain.Family;
-import com.example.demo.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
-
-import java.util.Collections;
 import java.util.List;
 
 import static com.google.common.base.Preconditions.checkArgument;
@@ -35,14 +32,13 @@ public class FamilyService {
         return familyDAO.findAll();
     }
 
-    public boolean addNewFamily(User user) {
-        Family family= new Family();
-        if (user!=null){
-            family.setUsers(Collections.singleton(user));
-            familyDAO.save(family);
-            return true;
-        }
-        return false;
+    public Family saveFamily(Family family) {
+        familyDAO.save(family);
+        return family;
     }
 
+    public void delete(Family family) {
+        family.setUsers(null);
+        familyDAO.delete(family);
+    }
 }

@@ -2,19 +2,18 @@ package com.example.demo.service;
 
 import com.example.demo.dao.UserDAO;
 import com.example.demo.domain.Education;
+import com.example.demo.domain.Family;
 import com.example.demo.domain.User;
 import com.example.demo.domain.UserRole;
 import com.example.demo.utils.DateUtil;
 import com.example.demo.utils.NumbersUtils;
-import freemarker.template.utility.NumberUtil;
+import org.apache.el.stream.Stream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.util.NumberUtils;
-import org.springframework.util.StringUtils;
 
 import java.util.*;
 import java.util.regex.Pattern;
@@ -111,10 +110,10 @@ public class UserService implements UserDetailsService {
 
     public void saveUser(User user, String login, String userStatus, String family, Map<String, String> form) {
         user.setUsername(login);
-        if (!userStatus.isEmpty() && NumbersUtils.isDigit(userStatus)){
+        if (!userStatus.isEmpty() && NumbersUtils.isDigit(userStatus)) {
             user.setUserStatus(statusService.getById(Long.valueOf(userStatus)));
         }
-        if (!family.isEmpty() && NumbersUtils.isDigit(family)){
+        if (!family.isEmpty() && NumbersUtils.isDigit(family)) {
             user.setFamily(familyService.getById(Long.valueOf(family)));
         }
         Set<String> roles = Arrays.stream(UserRole.values())
@@ -128,7 +127,36 @@ public class UserService implements UserDetailsService {
         }
         userDao.save(user);
     }
-    public User getUserByLogin(String login){
+
+    public User getUserByLogin(String login) {
         return userDao.findByUsername(login);
+    }
+
+    public void deleteUserOnFamily(Family family, int[] toDelete) {
+        for (int i : toDelete) {
+            User user = userDao.findOneById((long) i);
+            if (user != null) {
+                user.setFamily(null);
+                userDao.save(user);
+            }
+        }
+        familyService.saveFamily(family);
+    }
+
+    public boolean addUserFromFamily(Family family, String login) {
+        User user = getUserByLogin(login);
+        if (user != null) {
+            user.setFamily(family);
+            userDao.save(user);
+            return true;
+        }
+        return false;
+    }
+
+    public void deleteFamily(Family family) {
+        for (User user: family.getUsers()){
+            user.setFamily(null);
+        }
+        familyService.delete(family);
     }
 }

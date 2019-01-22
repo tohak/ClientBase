@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 @Controller
 @RequestMapping("/user")
@@ -40,9 +41,9 @@ public class UserController {
     public String userEditForm(@PathVariable User user, Model model) {
         model.addAttribute("user", user);
         model.addAttribute("roles", UserRole.values());
-
         return "userEdit";
     }
+
     @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping
     public String userSave(
