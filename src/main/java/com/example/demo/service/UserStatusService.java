@@ -9,6 +9,9 @@ import javax.persistence.EntityNotFoundException;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
+/*
+ * Сервисный класс с логикой: вытянуть статус пользователя из бд
+ */
 @Service
 public class UserStatusService {
     private final UserStatusDAO userStatusDAO;

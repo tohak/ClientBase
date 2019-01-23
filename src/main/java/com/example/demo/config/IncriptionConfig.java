@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+/*
+ * Конфигурация бина шифрования пароля
+ */
 @Configuration
 public class IncriptionConfig {
     @Bean

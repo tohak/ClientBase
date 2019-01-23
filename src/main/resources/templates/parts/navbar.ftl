@@ -16,11 +16,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="/family">Family</a>
             </li>
-            <#--<#if isAdmin>-->
-                <#--<li class="nav-item">-->
-                    <#--<a class="nav-link" href="/user">List users</a>-->
-                <#--</li>-->
-        <#--</#if>-->
         </ul>
         <div class="navbar-text mr-3"><#if user??>${name}, <@l.logout /><#else>Please, login
                 <form action="/main" method="Get">

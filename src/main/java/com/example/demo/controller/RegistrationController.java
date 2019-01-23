@@ -15,16 +15,18 @@ import org.springframework.web.client.RestTemplate;
 import javax.validation.Valid;
 import java.util.Map;
 
+/*
+ * Контроллер регистрации:
+ * возможность добовлять пользователей
+ */
 @Controller
 public class RegistrationController {
     private final UserService userService;
-    private final RestTemplate restTemplate;
 
     private static final String REG = "registration";
 
-    public RegistrationController(UserService userService, RestTemplate restTemplate) {
+    public RegistrationController(UserService userService) {
         this.userService = userService;
-        this.restTemplate = restTemplate;
     }
 
     @GetMapping("/registration")

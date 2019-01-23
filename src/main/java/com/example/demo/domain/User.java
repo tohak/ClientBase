@@ -1,7 +1,6 @@
 package com.example.demo.domain;
 
 import lombok.*;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -11,6 +10,9 @@ import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Set;
 
+/*
+ * Сущность пользователя
+ */
 @Getter
 @Setter
 @AllArgsConstructor

@@ -6,9 +6,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
+/*
+ * Базовый ДАО слой сущности статус пользователя
+ */
 @Repository
 public interface UserStatusDAO extends BaseDAO<UserStatus, Long> {
-    Optional<UserStatus> findById(Long id);
-
     UserStatus findOneById(Long id);
 }

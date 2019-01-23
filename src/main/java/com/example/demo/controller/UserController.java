@@ -3,18 +3,19 @@ package com.example.demo.controller;
 import com.example.demo.domain.User;
 import com.example.demo.domain.UserRole;
 import com.example.demo.service.UserService;
-import com.example.errors.ControllerErrorHandling;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
+/*
+ * Контроллер Пользователей
+ * выдает пользователей, редактирование пользователя
+ */
 @Controller
 @RequestMapping("/user")
 public class UserController {
@@ -24,12 +25,13 @@ public class UserController {
     public UserController(UserService userService) {
         this.userService = userService;
     }
+
     @GetMapping
     public String userList(@RequestParam(required = false, defaultValue = "") String filter, Model model) {
-        List<User> users= userService.getUsers(filter);
-        if (users.isEmpty()){
+        List<User> users = userService.getUsers(filter);
+        if (users.isEmpty()) {
             model.addAttribute("message", "Your search for nothing was found.");
-        }else {
+        } else {
             model.addAttribute("users", users);
             model.addAttribute("filter", filter);
         }
@@ -54,10 +56,9 @@ public class UserController {
             @RequestParam("userId") User user,
             Model model
     ) {
-
         try {
             userService.saveUser(user, login, userstatus, family, form);
-        }catch (Exception ex){
+        } catch (Exception ex) {
             model.addAttribute("message", ex.getMessage());
             return "userEdit";
         }

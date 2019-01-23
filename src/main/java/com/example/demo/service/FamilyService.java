@@ -10,6 +10,9 @@ import java.util.List;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
+/*
+ * Сервисный класс с логикой: достать из бд, обновить, удалить семью
+ */
 @Service
 public class FamilyService {
     private final FamilyDAO familyDAO;

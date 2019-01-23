@@ -5,6 +5,9 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.Set;
 
+/*
+ * Сущность семьи
+ */
 @Getter
 @Setter
 @AllArgsConstructor
@@ -20,6 +23,4 @@ public class Family {
 
     @OneToMany(mappedBy = "family", cascade = CascadeType.ALL)
     private Set<User> users;
-
-
 }

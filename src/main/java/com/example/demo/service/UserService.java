@@ -7,7 +7,6 @@ import com.example.demo.domain.User;
 import com.example.demo.domain.UserRole;
 import com.example.demo.utils.DateUtil;
 import com.example.demo.utils.NumbersUtils;
-import org.apache.el.stream.Stream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -19,6 +18,11 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+
+/*
+ * Сервисный класс пользовательский с логикой: добавить пользователя, удалить, обновить, удалить из семьи,
+  * достать пользователя по фильтру, по логину
+ */
 @Service
 public class UserService implements UserDetailsService {
     private final UserDAO userDao;
@@ -111,7 +115,11 @@ public class UserService implements UserDetailsService {
     public void saveUser(User user, String login, String userStatus, String family, Map<String, String> form) {
         user.setUsername(login);
         if (!userStatus.isEmpty() && NumbersUtils.isDigit(userStatus)) {
-            user.setUserStatus(statusService.getById(Long.valueOf(userStatus)));
+            if (Long.valueOf(userStatus) < 1) {
+                user.setUserStatus(null);
+            } else {
+                user.setUserStatus(statusService.getById(Long.valueOf(userStatus)));
+            }
         }
         if (!family.isEmpty() && NumbersUtils.isDigit(family)) {
             user.setFamily(familyService.getById(Long.valueOf(family)));
@@ -154,7 +162,7 @@ public class UserService implements UserDetailsService {
     }
 
     public void deleteFamily(Family family) {
-        for (User user: family.getUsers()){
+        for (User user : family.getUsers()) {
             user.setFamily(null);
         }
         familyService.delete(family);

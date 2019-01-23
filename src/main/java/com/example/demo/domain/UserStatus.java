@@ -5,6 +5,9 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.Set;
 
+/*
+ * Сущность статуса пользователя
+ */
 @Getter
 @Setter
 @AllArgsConstructor

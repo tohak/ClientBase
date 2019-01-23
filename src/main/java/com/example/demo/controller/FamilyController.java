@@ -10,7 +10,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+/*
+ * Контроллер семьи:
+ * возможность добовлять, удалять семью, добовлять удалять пользователей в семью
+ */
 @Controller
 @RequestMapping("/family")
 public class FamilyController {

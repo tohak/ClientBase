@@ -6,11 +6,14 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/*
+ * Базовый ДАО слой сущности пользователя
+ */
 @Repository
 public interface UserDAO extends BaseDAO<User, Long> {
     User findByUsername(String username);
 
     User findOneById(Long id);
-    List<User> findAllByFamilyNotNull();
+
     List<User> findAllByFamilyOrderById(Long id);
 }

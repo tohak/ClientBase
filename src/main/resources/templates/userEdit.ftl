@@ -14,7 +14,7 @@ User Editor:
         </div>
     </div>
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Status id(1=Vip) :</label>
+                <label class="col-sm-2 col-form-label">Status id(1=Vip, 0=no status) :</label>
                 <div class="col-sm-3">
     <input type="text" name="userstatus" value="<#if user.userStatus??>${user.userStatus.id}</#if>">
                 </div>

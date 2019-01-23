@@ -3,7 +3,9 @@ package com.example.demo.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
+/*
+ * Контроллер главной страници
+ */
 @Controller
 public class MainController {
     @GetMapping("/")

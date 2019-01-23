@@ -13935,3 +13935,89 @@ javax.servlet.ServletException: Circular view path [familyAddUser]: would dispat
 2019-01-22 23:37:08 INFO  c.e.d.DemoApplication:59 - Started DemoApplication in 9.114 seconds (JVM running for 10.919)
 2019-01-22 23:37:13 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-01-22 23:37:15 INFO  o.h.h.i.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-01-23 10:22:39 INFO  c.e.d.DemoApplication:50 - Starting DemoApplication on Asup-Technician with PID 364 (C:\Users\Technician\IdeaProjects\ClientBases\target\classes started by Technician in C:\Users\Technician\IdeaProjects\ClientBases)
+2019-01-23 10:22:39 INFO  c.e.d.DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-01-23 10:22:39 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-23 10:22:39 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-23 10:22:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-23 10:22:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 219ms. Found 3 repository interfaces.
+2019-01-23 10:22:43 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6d3cb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:22:44 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$a61b04ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:22:44 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:22:44 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7d5bfe82' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:22:44 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$caefa79c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:22:44 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:22:45 INFO  o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-01-23 10:22:45 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-01-23 10:22:45 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-01-23 10:22:45 INFO  o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Git\cmd;.]
+2019-01-23 10:22:45 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-01-23 10:22:46 INFO  o.f.c.i.l.VersionPrinter:49 - Flyway Community Edition 5.2.0 by Boxfuse
+2019-01-23 10:22:46 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2019-01-23 10:22:46 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2019-01-23 10:22:46 INFO  o.f.c.i.d.DatabaseFactory:49 - Database: jdbc:h2:mem:testdb (H2 1.4)
+2019-01-23 10:22:47 INFO  o.f.c.i.c.DbValidate:49 - Successfully validated 2 migrations (execution time 00:00.063s)
+2019-01-23 10:22:47 INFO  o.f.c.i.s.JdbcTableSchemaHistory:49 - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+2019-01-23 10:22:47 INFO  o.f.c.i.c.DbMigrate:49 - Current version of schema "PUBLIC": << Empty Schema >>
+2019-01-23 10:22:47 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 1 - Init DB
+2019-01-23 10:22:47 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 2 - Add constant
+2019-01-23 10:22:47 INFO  o.f.c.i.c.DbMigrate:49 - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.178s)
+2019-01-23 10:22:47 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-23 10:22:47 INFO  o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-23 10:22:47 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-01-23 10:22:48 INFO  o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-23 10:22:48 INFO  o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-23 10:22:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 10:22:51 INFO  o.s.b.d.a.OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-01-23 10:22:53 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b44bb06, org.springframework.security.web.context.SecurityContextPersistenceFilter@48e2638, org.springframework.security.web.header.HeaderWriterFilter@59cbed2e, org.springframework.security.web.csrf.CsrfFilter@4ed0905f, org.springframework.security.web.authentication.logout.LogoutFilter@663f9674, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4b4f357d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fec3663, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a400e08, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@52728993, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26450f83, org.springframework.security.web.session.SessionManagementFilter@6007d38f, org.springframework.security.web.access.ExceptionTranslationFilter@7fdb012b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@568531b1]
+2019-01-23 10:22:53 INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 10:22:53 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:234 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-23 10:22:55 INFO  o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-23 10:22:55 INFO  c.e.d.DemoApplication:59 - Started DemoApplication in 17.48 seconds (JVM running for 24.05)
+2019-01-23 10:48:28 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-23 10:48:31 INFO  o.h.h.i.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-01-23 10:49:51 INFO  c.e.d.DemoApplication:50 - Starting DemoApplication on Asup-Technician with PID 5396 (C:\Users\Technician\IdeaProjects\ClientBases\target\classes started by Technician in C:\Users\Technician\IdeaProjects\ClientBases)
+2019-01-23 10:49:51 INFO  c.e.d.DemoApplication:675 - No active profile set, falling back to default profiles: default
+2019-01-23 10:49:51 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-23 10:49:51 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-23 10:49:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-23 10:49:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 296ms. Found 3 repository interfaces.
+2019-01-23 10:49:56 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b50e3f9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:49:57 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$4dbc07d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:49:57 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:49:57 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1091af93' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:49:57 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$7290aa86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:49:57 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 10:49:58 INFO  o.s.b.w.e.t.TomcatWebServer:90 - Tomcat initialized with port(s): 8080 (http)
+2019-01-23 10:49:58 INFO  o.a.c.c.StandardService:173 - Starting service [Tomcat]
+2019-01-23 10:49:58 INFO  o.a.c.c.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-01-23 10:49:58 INFO  o.a.c.c.AprLifecycleListener:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Git\cmd;.]
+2019-01-23 10:49:58 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring embedded WebApplicationContext
+2019-01-23 10:49:59 INFO  o.f.c.i.l.VersionPrinter:49 - Flyway Community Edition 5.2.0 by Boxfuse
+2019-01-23 10:49:59 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2019-01-23 10:49:59 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2019-01-23 10:49:59 INFO  o.f.c.i.d.DatabaseFactory:49 - Database: jdbc:h2:mem:testdb (H2 1.4)
+2019-01-23 10:50:00 INFO  o.f.c.i.c.DbValidate:49 - Successfully validated 2 migrations (execution time 00:00.124s)
+2019-01-23 10:50:01 INFO  o.f.c.i.s.JdbcTableSchemaHistory:49 - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+2019-01-23 10:50:01 INFO  o.f.c.i.c.DbMigrate:49 - Current version of schema "PUBLIC": << Empty Schema >>
+2019-01-23 10:50:01 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 1 - Init DB
+2019-01-23 10:50:01 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 2 - Add constant
+2019-01-23 10:50:02 INFO  o.f.c.i.c.DbMigrate:49 - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:01.056s)
+2019-01-23 10:50:02 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-23 10:50:02 INFO  o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-23 10:50:02 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-01-23 10:50:03 INFO  o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-23 10:50:03 INFO  o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-23 10:50:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 10:50:08 INFO  o.s.b.d.a.OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2019-01-23 10:50:15 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70687203, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a19ed1a, org.springframework.security.web.header.HeaderWriterFilter@622bb43, org.springframework.security.web.csrf.CsrfFilter@29b63d89, org.springframework.security.web.authentication.logout.LogoutFilter@60ed253d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@56d1172, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22d2d6ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60da951b, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5c302156, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65c3fb98, org.springframework.security.web.session.SessionManagementFilter@35ed166, org.springframework.security.web.access.ExceptionTranslationFilter@9363e5e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3dcb0a5c]
+2019-01-23 10:50:16 INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 10:50:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:234 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-23 10:50:17 INFO  o.s.b.w.e.t.TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-23 10:50:17 INFO  c.e.d.DemoApplication:59 - Started DemoApplication in 28.14 seconds (JVM running for 32.09)
+2019-01-23 10:50:22 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-23 10:50:26 INFO  o.h.h.i.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory

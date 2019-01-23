@@ -1,5 +1,8 @@
 package com.example.demo.utils;
 
+/*
+ * Ультильный класс для проверки являеться ли строка числом
+ */
 public class NumbersUtils {
     private NumbersUtils() {
     }
