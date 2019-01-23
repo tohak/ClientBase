@@ -4,8 +4,6 @@ import com.example.demo.dao.common.BaseDAO;
 import com.example.demo.domain.UserStatus;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
 /*
  * Базовый ДАО слой сущности статус пользователя
  */
