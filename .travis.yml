@@ -1,9 +1,11 @@
 language: java
 jdk:
   - oraclejdk8
- services:
-    before_install:
-      - chmod +x mvnw
-    cache:
-      directories:
-        - $HOME/.m2
+services:
+  - mysql
+before_install:
+  - chmod +x mvnw
+  - mysql -e 'CREATE DATABASE test;'
+cache:
+  directories:
+    - $HOME/.m2

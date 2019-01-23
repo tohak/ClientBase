@@ -14021,3 +14021,196 @@ javax.servlet.ServletException: Circular view path [familyAddUser]: would dispat
 2019-01-23 10:50:17 INFO  c.e.d.DemoApplication:59 - Started DemoApplication in 28.14 seconds (JVM running for 32.09)
 2019-01-23 10:50:22 INFO  o.a.c.c.C.[.[.[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-01-23 10:50:26 INFO  o.h.h.i.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-01-23 13:02:38 INFO  c.e.d.s.UserServiceTest:50 - Starting UserServiceTest on Asup-Technician with PID 4088 (started by Technician in C:\Users\Technician\IdeaProjects\ClientBases)
+2019-01-23 13:02:38 INFO  c.e.d.s.UserServiceTest:675 - No active profile set, falling back to default profiles: default
+2019-01-23 13:02:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-23 13:02:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 343ms. Found 3 repository interfaces.
+2019-01-23 13:02:46 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e497773] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:02:46 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$b6f73fad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:02:46 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:02:46 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6540cf1d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:02:46 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$dbcbe25f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:02:46 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:02:47 INFO  o.f.c.i.l.VersionPrinter:49 - Flyway Community Edition 5.2.0 by Boxfuse
+2019-01-23 13:02:47 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2019-01-23 13:02:48 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2019-01-23 13:02:48 INFO  o.f.c.i.d.DatabaseFactory:49 - Database: jdbc:h2:mem:testdb (H2 1.4)
+2019-01-23 13:02:48 INFO  o.f.c.i.c.DbValidate:49 - Successfully validated 2 migrations (execution time 00:00.100s)
+2019-01-23 13:02:48 INFO  o.f.c.i.s.JdbcTableSchemaHistory:49 - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+2019-01-23 13:02:49 INFO  o.f.c.i.c.DbMigrate:49 - Current version of schema "PUBLIC": << Empty Schema >>
+2019-01-23 13:02:49 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 1 - Init DB
+2019-01-23 13:02:49 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 2 - Add constant
+2019-01-23 13:02:49 INFO  o.f.c.i.c.DbMigrate:49 - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.379s)
+2019-01-23 13:02:50 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-23 13:02:50 INFO  o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-23 13:02:50 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-01-23 13:02:50 INFO  o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-23 13:02:51 INFO  o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-23 13:02:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 13:02:58 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@661db63e, org.springframework.security.web.context.SecurityContextPersistenceFilter@d7055be, org.springframework.security.web.header.HeaderWriterFilter@22ae32ba, org.springframework.security.web.csrf.CsrfFilter@28f90752, org.springframework.security.web.authentication.logout.LogoutFilter@669c2b07, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@a55e82a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12a6e8ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6200b644, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2b2b7e3c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cf2f5d6, org.springframework.security.web.session.SessionManagementFilter@299a43d9, org.springframework.security.web.access.ExceptionTranslationFilter@15d79b70, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@aee05f4]
+2019-01-23 13:03:00 INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 13:03:00 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:234 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-23 13:03:02 INFO  c.e.d.s.UserServiceTest:59 - Started UserServiceTest in 28.504 seconds (JVM running for 35.254)
+2019-01-23 13:03:02 INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-23 13:03:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 13:03:02 INFO  o.s.b.f.s.DisposableBeanAdapter:265 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2019-01-23 13:03:02 INFO  c.z.h.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2019-01-23 13:03:02 INFO  c.z.h.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2019-01-23 13:04:20 INFO  c.e.d.s.UserServiceTest:50 - Starting UserServiceTest on Asup-Technician with PID 3572 (started by Technician in C:\Users\Technician\IdeaProjects\ClientBases)
+2019-01-23 13:04:20 INFO  c.e.d.s.UserServiceTest:675 - No active profile set, falling back to default profiles: default
+2019-01-23 13:04:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-23 13:04:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 422ms. Found 3 repository interfaces.
+2019-01-23 13:04:28 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$134419f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:04:29 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$abf1e22f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:04:29 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:04:29 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@ec8f4b9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:04:29 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$d0c684e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:04:29 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:04:30 INFO  o.f.c.i.l.VersionPrinter:49 - Flyway Community Edition 5.2.0 by Boxfuse
+2019-01-23 13:04:30 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2019-01-23 13:04:30 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2019-01-23 13:04:30 INFO  o.f.c.i.d.DatabaseFactory:49 - Database: jdbc:h2:mem:testdb (H2 1.4)
+2019-01-23 13:04:31 INFO  o.f.c.i.c.DbValidate:49 - Successfully validated 2 migrations (execution time 00:00.086s)
+2019-01-23 13:04:31 INFO  o.f.c.i.s.JdbcTableSchemaHistory:49 - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+2019-01-23 13:04:31 INFO  o.f.c.i.c.DbMigrate:49 - Current version of schema "PUBLIC": << Empty Schema >>
+2019-01-23 13:04:31 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 1 - Init DB
+2019-01-23 13:04:31 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 2 - Add constant
+2019-01-23 13:04:31 INFO  o.f.c.i.c.DbMigrate:49 - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.358s)
+2019-01-23 13:04:32 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-23 13:04:32 INFO  o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-23 13:04:32 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-01-23 13:04:32 INFO  o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-23 13:04:33 INFO  o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-23 13:04:36 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 13:04:40 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dbbdf92, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d18338b, org.springframework.security.web.header.HeaderWriterFilter@3c64339f, org.springframework.security.web.csrf.CsrfFilter@45424c0, org.springframework.security.web.authentication.logout.LogoutFilter@60844992, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15914bb5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30c8c6ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19ec5357, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3fd5d679, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1dbeedff, org.springframework.security.web.session.SessionManagementFilter@4eb1943b, org.springframework.security.web.access.ExceptionTranslationFilter@6a902015, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@dbc7e0a]
+2019-01-23 13:04:42 INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 13:04:42 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:234 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-23 13:04:44 INFO  c.e.d.s.UserServiceTest:59 - Started UserServiceTest in 30.095 seconds (JVM running for 34.836)
+2019-01-23 13:04:44 INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-23 13:04:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 13:04:44 INFO  o.s.b.f.s.DisposableBeanAdapter:265 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2019-01-23 13:04:44 INFO  c.z.h.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2019-01-23 13:04:44 INFO  c.z.h.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2019-01-23 13:06:29 INFO  c.e.d.s.UserServiceTest:50 - Starting UserServiceTest on Asup-Technician with PID 5440 (started by Technician in C:\Users\Technician\IdeaProjects\ClientBases)
+2019-01-23 13:06:29 INFO  c.e.d.s.UserServiceTest:675 - No active profile set, falling back to default profiles: default
+2019-01-23 13:06:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-23 13:06:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 390ms. Found 3 repository interfaces.
+2019-01-23 13:06:38 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$134419f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:06:39 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$abf1e22f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:06:39 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:06:39 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@ec8f4b9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:06:39 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$d0c684e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:06:39 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:06:39 INFO  o.f.c.i.l.VersionPrinter:49 - Flyway Community Edition 5.2.0 by Boxfuse
+2019-01-23 13:06:39 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2019-01-23 13:06:40 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2019-01-23 13:06:40 INFO  o.f.c.i.d.DatabaseFactory:49 - Database: jdbc:h2:mem:testdb (H2 1.4)
+2019-01-23 13:06:40 INFO  o.f.c.i.c.DbValidate:49 - Successfully validated 2 migrations (execution time 00:00.096s)
+2019-01-23 13:06:41 INFO  o.f.c.i.s.JdbcTableSchemaHistory:49 - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+2019-01-23 13:06:41 INFO  o.f.c.i.c.DbMigrate:49 - Current version of schema "PUBLIC": << Empty Schema >>
+2019-01-23 13:06:41 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 1 - Init DB
+2019-01-23 13:06:41 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 2 - Add constant
+2019-01-23 13:06:41 INFO  o.f.c.i.c.DbMigrate:49 - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.367s)
+2019-01-23 13:06:42 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-23 13:06:42 INFO  o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-23 13:06:42 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-01-23 13:06:42 INFO  o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-23 13:06:43 INFO  o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-23 13:06:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 13:06:51 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dbbdf92, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d18338b, org.springframework.security.web.header.HeaderWriterFilter@3c64339f, org.springframework.security.web.csrf.CsrfFilter@45424c0, org.springframework.security.web.authentication.logout.LogoutFilter@60844992, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15914bb5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30c8c6ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19ec5357, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3fd5d679, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1dbeedff, org.springframework.security.web.session.SessionManagementFilter@4eb1943b, org.springframework.security.web.access.ExceptionTranslationFilter@6a902015, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@dbc7e0a]
+2019-01-23 13:06:54 INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 13:06:54 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:234 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-23 13:06:56 INFO  c.e.d.s.UserServiceTest:59 - Started UserServiceTest in 31.779 seconds (JVM running for 36.302)
+2019-01-23 13:06:56 INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-23 13:06:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 13:06:56 INFO  o.s.b.f.s.DisposableBeanAdapter:265 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2019-01-23 13:06:56 INFO  c.z.h.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2019-01-23 13:06:56 INFO  c.z.h.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2019-01-23 13:09:00 INFO  c.e.d.s.UserServiceTest:50 - Starting UserServiceTest on Asup-Technician with PID 1604 (started by Technician in C:\Users\Technician\IdeaProjects\ClientBases)
+2019-01-23 13:09:00 INFO  c.e.d.s.UserServiceTest:675 - No active profile set, falling back to default profiles: default
+2019-01-23 13:09:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-23 13:09:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 436ms. Found 3 repository interfaces.
+2019-01-23 13:09:11 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f07a99a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:09:11 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$892861e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:09:11 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:09:11 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3dfa819' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:09:11 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$adfd0492] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:09:11 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:09:13 INFO  o.f.c.i.l.VersionPrinter:49 - Flyway Community Edition 5.2.0 by Boxfuse
+2019-01-23 13:09:13 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2019-01-23 13:09:14 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2019-01-23 13:09:14 INFO  o.f.c.i.d.DatabaseFactory:49 - Database: jdbc:h2:mem:testdb (H2 1.4)
+2019-01-23 13:09:14 INFO  o.f.c.i.c.DbValidate:49 - Successfully validated 2 migrations (execution time 00:00.095s)
+2019-01-23 13:09:14 INFO  o.f.c.i.s.JdbcTableSchemaHistory:49 - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+2019-01-23 13:09:14 INFO  o.f.c.i.c.DbMigrate:49 - Current version of schema "PUBLIC": << Empty Schema >>
+2019-01-23 13:09:14 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 1 - Init DB
+2019-01-23 13:09:14 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 2 - Add constant
+2019-01-23 13:09:14 INFO  o.f.c.i.c.DbMigrate:49 - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.277s)
+2019-01-23 13:09:15 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-23 13:09:15 INFO  o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-23 13:09:15 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-01-23 13:09:16 INFO  o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-23 13:09:16 INFO  o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-23 13:09:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 13:09:23 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dbbdf92, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d18338b, org.springframework.security.web.header.HeaderWriterFilter@3c64339f, org.springframework.security.web.csrf.CsrfFilter@45424c0, org.springframework.security.web.authentication.logout.LogoutFilter@60844992, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15914bb5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30c8c6ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19ec5357, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3fd5d679, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1dbeedff, org.springframework.security.web.session.SessionManagementFilter@4eb1943b, org.springframework.security.web.access.ExceptionTranslationFilter@6a902015, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@dbc7e0a]
+2019-01-23 13:09:25 INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 13:09:26 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:234 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-23 13:09:28 INFO  c.e.d.s.UserServiceTest:59 - Started UserServiceTest in 31.348 seconds (JVM running for 35.14)
+2019-01-23 13:09:28 INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-23 13:09:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 13:09:28 INFO  o.s.b.f.s.DisposableBeanAdapter:265 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2019-01-23 13:09:28 INFO  c.z.h.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2019-01-23 13:09:28 INFO  c.z.h.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+2019-01-23 13:18:30 INFO  c.e.d.LoginTest:50 - Starting LoginTest on Asup-Technician with PID 3080 (started by Technician in C:\Users\Technician\IdeaProjects\ClientBases)
+2019-01-23 13:18:30 INFO  c.e.d.LoginTest:675 - No active profile set, falling back to default profiles: default
+2019-01-23 13:18:35 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-23 13:18:35 INFO  o.s.d.r.c.RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 360ms. Found 3 repository interfaces.
+2019-01-23 13:18:37 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d5b84128] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:18:37 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$6e660962] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:18:38 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:18:38 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4f82663e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:18:38 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$933aac14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:18:38 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-23 13:18:38 INFO  o.f.c.i.l.VersionPrinter:49 - Flyway Community Edition 5.2.0 by Boxfuse
+2019-01-23 13:18:38 INFO  c.z.h.HikariDataSource:110 - HikariPool-1 - Starting...
+2019-01-23 13:18:39 INFO  c.z.h.HikariDataSource:123 - HikariPool-1 - Start completed.
+2019-01-23 13:18:39 INFO  o.f.c.i.d.DatabaseFactory:49 - Database: jdbc:h2:mem:testdb (H2 1.4)
+2019-01-23 13:18:40 INFO  o.f.c.i.c.DbValidate:49 - Successfully validated 2 migrations (execution time 00:00.096s)
+2019-01-23 13:18:40 INFO  o.f.c.i.s.JdbcTableSchemaHistory:49 - Creating Schema History table: "PUBLIC"."flyway_schema_history"
+2019-01-23 13:18:40 INFO  o.f.c.i.c.DbMigrate:49 - Current version of schema "PUBLIC": << Empty Schema >>
+2019-01-23 13:18:40 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 1 - Init DB
+2019-01-23 13:18:40 INFO  o.f.c.i.c.DbMigrate:49 - Migrating schema "PUBLIC" to version 2 - Add constant
+2019-01-23 13:18:40 INFO  o.f.c.i.c.DbMigrate:49 - Successfully applied 2 migrations to schema "PUBLIC" (execution time 00:00.263s)
+2019-01-23 13:18:41 INFO  o.h.j.i.u.LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-23 13:18:41 INFO  o.h.Version:46 - HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-23 13:18:41 INFO  o.h.c.Environment:213 - HHH000206: hibernate.properties not found
+2019-01-23 13:18:42 INFO  o.h.a.c.Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-23 13:18:43 INFO  o.h.d.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-23 13:18:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 13:18:50 INFO  o.s.s.w.DefaultSecurityFilterChain:43 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f6c8d45, org.springframework.security.web.context.SecurityContextPersistenceFilter@750e2d33, org.springframework.security.web.header.HeaderWriterFilter@401ec794, org.springframework.security.web.csrf.CsrfFilter@1224e1b6, org.springframework.security.web.authentication.logout.LogoutFilter@100eeedc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7e4ac598, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@277bc3a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78bad03b, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@191e654, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f2ca6f8, org.springframework.security.web.session.SessionManagementFilter@47f0f414, org.springframework.security.web.access.ExceptionTranslationFilter@1d3a03fe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69b37f5c]
+2019-01-23 13:18:52 INFO  o.s.s.c.ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-23 13:18:52 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration:234 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-23 13:18:55 INFO  o.s.b.t.m.w.SpringBootMockServletContext:444 - Initializing Spring TestDispatcherServlet ''
+2019-01-23 13:18:55 INFO  o.s.t.w.s.TestDispatcherServlet:524 - Initializing Servlet ''
+2019-01-23 13:18:55 INFO  o.s.t.w.s.TestDispatcherServlet:546 - Completed initialization in 68 ms
+2019-01-23 13:18:55 INFO  c.e.d.LoginTest:59 - Started LoginTest in 29.364 seconds (JVM running for 33.686)
+2019-01-23 13:18:56 INFO  o.s.s.c.ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-01-23 13:18:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-23 13:18:56 INFO  o.s.b.f.s.DisposableBeanAdapter:265 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2019-01-23 13:18:56 INFO  c.z.h.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+2019-01-23 13:18:56 INFO  c.z.h.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
