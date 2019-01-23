@@ -2,7 +2,7 @@ package com.example.demo.controller;
 
 import com.example.demo.domain.User;
 import com.example.demo.service.UserService;
-import com.example.errors.ControllerErrorHandling;
+import com.example.demo.errors.ControllerErrorHandling;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;

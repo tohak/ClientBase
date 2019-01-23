@@ -35,12 +35,12 @@ public class FamilyService {
         return familyDAO.findAll();
     }
 
-    public Family saveFamily(Family family) {
+    public synchronized Family saveFamily(Family family) {
         familyDAO.save(family);
         return family;
     }
 
-    public void delete(Family family) {
+    public synchronized void delete(Family family) {
         family.setUsers(null);
         familyDAO.delete(family);
     }

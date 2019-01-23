@@ -1,4 +1,4 @@
-package com.example.errors;
+package com.example.demo.errors;
 
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;

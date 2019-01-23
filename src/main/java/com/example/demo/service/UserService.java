@@ -13,6 +13,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 import java.util.regex.Pattern;
@@ -48,7 +49,8 @@ public class UserService implements UserDetailsService {
         return user;
     }
 
-    public boolean addUser(User user, String married, String educations, String date) {
+    @Transactional
+    public synchronized boolean addUser(User user, String married, String educations, String date) {
         User userFromBD = userDao.findByUsername(user.getUsername());
         if (userFromBD != null || user.getUsername().isEmpty()) {
             return false;
@@ -112,7 +114,7 @@ public class UserService implements UserDetailsService {
                 .collect(Collectors.toList());
     }
 
-    public void saveUser(User user, String login, String userStatus, String family, Map<String, String> form) {
+    public synchronized void saveUser(User user, String login, String userStatus, String family, Map<String, String> form) {
         user.setUsername(login);
         if (!userStatus.isEmpty() && NumbersUtils.isDigit(userStatus)) {
             if (Long.valueOf(userStatus) < 1) {
@@ -140,7 +142,7 @@ public class UserService implements UserDetailsService {
         return userDao.findByUsername(login);
     }
 
-    public void deleteUserOnFamily(Family family, int[] toDelete) {
+    public synchronized void deleteUserOnFamily(Family family, int[] toDelete) {
         for (int i : toDelete) {
             User user = userDao.findOneById((long) i);
             if (user != null) {
@@ -151,7 +153,7 @@ public class UserService implements UserDetailsService {
         familyService.saveFamily(family);
     }
 
-    public boolean addUserFromFamily(Family family, String login) {
+    public synchronized boolean addUserFromFamily(Family family, String login) {
         User user = getUserByLogin(login);
         if (user != null) {
             user.setFamily(family);
@@ -161,7 +163,7 @@ public class UserService implements UserDetailsService {
         return false;
     }
 
-    public void deleteFamily(Family family) {
+    public synchronized void deleteFamily(Family family) {
         for (User user : family.getUsers()) {
             user.setFamily(null);
         }
